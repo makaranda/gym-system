@@ -1,0 +1,363 @@
+.darkgrey_section {
+    background-color: #323232;
+    color: #b1b1b1;
+    top: -72px;
+}
+
+.booking-form .select {
+    position: relative;
+    width: 100%;
+}
+
+.booking-form .select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Make space for the icon */
+    background: url('https://cdn-icons-png.flaticon.com/512/54/54785.png') no-repeat right 10px center;
+    background-size: 20px;
+    background-color: white; /* Make sure the background is consistent */
+    border: 1px solid #ccc; /* Optional: add border to match style */
+}
+
+/* Custom modal positioning */
+ .modal-dialog-bottom-right {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+    max-width: 100%;
+    width:40%;
+}
+
+.modal.fade.show {
+    display: block;
+    opacity: 1;
+}
+
+#locationmodal {
+    z-index: 9999;
+}
+#navFormBookingHome {
+    .form-group{
+        position: relative;
+        margin: 4px;
+        i {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        input{
+            font-size: 10px;
+            &::placeholder {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+#customModal{
+    width: 1%;
+    height: 1%;
+    .modal-dialog {
+        box-shadow: 0px 0px 20px 0px #000;
+        .modal-content{
+            border-radius: 0px;
+            .modal-header{
+                border-radius: 0px;
+            }
+            .modal-footer{
+                border-radius: 0px;
+            }
+        }
+    }
+}
+
+/* Slide-in animation from bottom */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-out animation to bottom */
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+/* Apply the slide-in animation to the alerts */
+.alert {
+    animation: slideIn 0.5s ease forwards;
+    position: relative;
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+}
+
+/* Add a nice hover effect to the close button */
+.alert .btn-close {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.alert .btn-close:hover {
+    opacity: 1;
+}
+
+/* Optional: Adjust alert position for better styling */
+#validationAlertArea {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10500;
+    max-width: 450px;
+}
+
+/* Slide-out class for when the alert is closed */
+.alert.slide-out {
+    animation: slideOut 0.5s ease forwards;
+}
+
+.theme-btn2 {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 25px;
+    transition: all .5s;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid #fff;
+    background: #111111;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);;
+    z-index: 1;
+    &:hover{
+        color: #111111;
+        background: #ffb300;
+    }
+}
+
+.table-list-info a {
+    display: block;
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-btn3 {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 25px;
+    transition: all .5s;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    background: #06007c;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);;
+    z-index: 1;
+
+    &:hover{
+        color: #3c31ff;
+        background: #1900a9;
+    }
+}
+
+.booking-form {
+
+    padding: 30px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 32%);
+
+    .theme-btn {
+        width: 100%;
+        padding: 15px;
+    }
+    .theme-btn2 {
+        width: 100%;
+        padding: 15px;
+    }
+    .theme-btn3 {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+#scroll-top2 {
+    position: fixed;
+    bottom: 16px;
+    right: 88px;
+    z-index: 99;
+    font-size: 23px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    line-height: 50px;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+#scroll-top3 {
+    position: fixed;
+    bottom: 16px;
+    right: 88px;
+    z-index: 99;
+    font-size: 23px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    line-height: 50px;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.float-right{
+    float: right;
+}
+
+.swal2-actions {
+    width: 96%;
+    .swal2-confirm {
+        width: 47%;
+    }
+    .swal2-cancel  {
+        width: 47%;
+    }
+}
+
+select {
+    -webkit-appearance: menulist; /* For Safari */
+    -moz-appearance: menulist; /* For Firefox */
+    appearance: menulist; /* Standard */
+}
+
+select {
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For other browsers */
+    width: 100%;
+    padding: 10px;
+    padding-right: 30px; /* Space for the custom arrow */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23333" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-color: #fff; /* Ensure background color is consistent */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/*  checked vehicle type */
+.image-radio-group {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 3 columns for 9 images */
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+}
+
+/* Highlight selected image */
+.image-container input[type="radio"]:checked + img {
+    border: 2px solid green;
+    background-color: #ffb30047;
+}
+
+.image-container input[type="radio"] + img:hover {
+    border: 2px solid green;
+    background-color: #ffb30014;
+}
+
+.image-container input[type="radio"] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+
+button.profile-img-btn:hover {
+    scale: 1.1;
+    animation-timing-function: ease-out;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    height: 50px;
+    .select2-selection__rendered{
+        line-height: 50px;
+    }
+    .select2-selection__arrow{
+        height: 50px;
+    }
+}
+
+.nav-right-account .dropdown-menu {
+    border: none;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    z-index: 999999;
+    position: absolute;
+}
+
+.selected-color{
+    background-color: rgb(124, 252, 0);
+    color: rgb(21, 173, 21);
+}
+.not-selected-color{
+    background-color: rgba(255, 102, 68, 0.623);
+    color: rgb(98, 0, 0);
+}
+

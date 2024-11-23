@@ -1,0 +1,77 @@
+
+@media screen and (max-width: 2000px) {
+    .image-radio-group {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+    }
+    #customModal .modal-dialog-bottom-right ,#driverModal .modal-dialog-bottom-right{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .image-radio-group {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+    }
+    #customModal .modal-dialog-bottom-right ,#driverModal .modal-dialog-bottom-right{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .image-radio-group {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+    }
+    #customModal .modal-dialog-bottom-right ,#driverModal .modal-dialog-bottom-right{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .image-radio-group {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+    }
+    #customModal .modal-dialog-bottom-right ,#driverModal .modal-dialog-bottom-right{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .image-radio-group {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    #customModal .modal-dialog-bottom-right ,#driverModal .modal-dialog-bottom-right{
+        width: 95%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .image-radio-group {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    #customModal .modal-dialog-bottom-right ,#driverModal .modal-dialog-bottom-right{
+        width: 94%;
+        height: auto;
+    }
+}
+
+@media (min-width: 576px) {
+
+}
