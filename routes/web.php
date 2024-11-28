@@ -27,6 +27,7 @@ Route::post('register/driver', [RegisterController::class, 'registerDriver'])->n
 
 //Route::get('register/driver', [RegisterController::class, 'showDriverRegisterForm'])->name('register.driver');
 //Route::post('register/driver', [RegisterController::class, 'registerDriver']);
+
 Route::get('admin-login', [LoginController::class, 'showAdminLogin'])->name('adminlogin.index');
 Route::post('admin-login', [LoginController::class, 'login'])->name('adminlogin.login');
 
@@ -59,7 +60,6 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin/dashboard')->group(func
     Route::get('/', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('/profile', [AdminDashboardController::class, 'adminProfile'])->name('admin.profile');
     Route::get('/booking', [AdminDashboardController::class, 'adminBooking'])->name('admin.booking');
-
 
     // Vehicle Types Management Routes
     Route::get('/vehicle-types', [VehicleTypeController::class, 'index'])->name('vehicle-types.index');
